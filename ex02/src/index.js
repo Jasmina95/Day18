@@ -28,10 +28,16 @@ var iterator = myGenerator();
 let fifteenArray = [];
 
 for (let i = 0; i < 16; i++) {
-  fifteenArray.push(iterator.next().value);
+    let x = iterator.next();
+    if (x.done === true) {
+        fifteenArray.push("undefined!")
+    } else {
+        fifteenArray.push(x.value);
+    }
+    
 }
 
-//console.log(fifteenArray);
-console.log(fifteenArray.join("#, ") + "undefined!");
+console.log(fifteenArray);
+console.log(fifteenArray.join("#, "));
 // Only change code above this line
 module.exports = { fifteenArray, myGenerator };
