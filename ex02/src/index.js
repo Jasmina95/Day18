@@ -1,5 +1,3 @@
-const _ = require("lodash");
-
 // Only change code below this line
 function* myGenerator() {
   yield* insideGenerator1();
@@ -32,19 +30,10 @@ var iterator = myGenerator();
 
 let fifteenArray = [];
 
-let str = "";
-
 for (let i = 0; i < 15; i++) {
   fifteenArray.push(iterator.next().value);
-  if (i === 14) {
-    str += fifteenArray[i] + "#, undefined!";
-  } else {
-    str += fifteenArray[i] + "#, ";
-  }
 }
 
-console.log(str);
-
-//console.log(_.map(fifteenArray).join("#, ") + "#, undefined!");
+console.log(fifteenArray.join("#, ") + "#, undefined!");
 // Only change code above this line
 module.exports = { fifteenArray, myGenerator };
