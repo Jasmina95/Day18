@@ -11,18 +11,15 @@ let arrKey = [];
 for (let key of shoppingList.keys()) {
   arrKey.push(key);
 }
-for (let i = 0; i < arrKey.length; i++) {
-  console.log(`groceries: ${arrKey[i]}`);
-}
+
+console.log("groceries: " + arrKey.join("\ngroceries: "));
 
 let arrValue = [];
 for (let value of shoppingList.values()) {
   arrValue.push(value);
 }
 
-for (let i = 0; i < arrValue.length; i++) {
-  console.log(`amount: ${arrValue[i]}`);
-}
+console.log("amount: " + arrValue.join("\namount: "));
 
 for (let [key, value] of shoppingList.entries()) {
   console.log(`[ '${key}', ${value} ]`);
