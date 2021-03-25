@@ -37,7 +37,6 @@ for (let i = 0; i < 16; i++) {
     
 }
 
-console.log(fifteenArray);
 console.log(fifteenArray.join("#, "));
 // Only change code above this line
 module.exports = { fifteenArray, myGenerator };
