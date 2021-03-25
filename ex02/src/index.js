@@ -6,23 +6,20 @@ function* myGenerator() {
 }
 
 function* insideGenerator1() {
-  //let x = 1;
-  for (let i = 1; i < 6; i++) {
-    yield i;
+  for (let x = 1; x < 6; x++) {
+    yield x;
   }
 }
 
 function* insideGenerator2() {
-  //let x = 10;
-  for (let i = 10; i <= 15; i++) {
-    yield i;
+  for (let x = 10; x <= 15; x++) {
+    yield x;
   }
 }
 
 function* insideGenerator3() {
-  //let x = 6;
-  for (let i = 6; i <= 9; i++) {
-    yield i;
+  for (let x = 6; x <= 9; x++) {
+    yield x;
   }
 }
 
