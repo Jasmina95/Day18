@@ -28,13 +28,12 @@ var iterator = myGenerator();
 let fifteenArray = [];
 
 for (let i = 0; i < 16; i++) {
-    let x = iterator.next();
-    if (x.done === true) {
-        fifteenArray.push("undefined!")
-    } else {
-        fifteenArray.push(x.value);
-    }
-    
+  let x = iterator.next();
+  if (x.done === true) {
+    fifteenArray.push("undefined!");
+  } else {
+    fifteenArray.push(x.value);
+  }
 }
 
 console.log(fifteenArray.join("#, "));
