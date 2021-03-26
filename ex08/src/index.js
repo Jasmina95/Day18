@@ -6,8 +6,6 @@ const unionSet = new Set([...one].concat(...two));
 const intersectionSet = new Set([...one].filter((x) => [...two].includes(x)));
 const differenceSet = new Set([...one].filter((x) => ![...two].includes(x)));
 
-console.log(one);
-console.log(two);
 console.log(unionSet);
 console.log(intersectionSet);
 console.log(differenceSet);
