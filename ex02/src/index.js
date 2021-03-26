@@ -23,7 +23,7 @@ function* insideGenerator3() {
   }
 }
 
-var iterator = myGenerator();
+const iterator = myGenerator();
 
 let fifteenArray = [];
 
