@@ -5,7 +5,7 @@ function* myGenerator() {
   yield* arguments;
 }
 
-var iterator = myGenerator(6, 7, 8);
+const iterator = myGenerator(6, 7, 8);
 
 let generatorArray = [];
 
